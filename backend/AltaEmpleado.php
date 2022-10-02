@@ -7,6 +7,12 @@ Se retornará un JSON que contendrá: éxito(bool) y mensaje(string) indicando l
 
 require_once("./clases/Empleado.php");
 
+#region retorno
+$ret = new stdClass();
+$ret->exito = false;
+$ret->mensaj = "No se agrego el usuario";
+#endregion
+
 #region Datos POST
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
@@ -29,8 +35,12 @@ $emp->foto = json_encode($foto);
 
 #region Agrego el empleado a la base de datos
 
-if ($emp->Agregar() === true)
-    echo "se Agrego el empleado";
-else
-    echo "ERROR";
+if ($emp->Agregar() === true) {
+    $ret->exito = true;
+    $ret->mensaj = "Usuario Agregado";
+}
+
+$ret = json_encode($ret);
+
+echo $ret;
 #endregion
