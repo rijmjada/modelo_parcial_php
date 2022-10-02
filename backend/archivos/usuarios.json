@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "diego",
+        "correo": "diego@gmail.com",
+        "clave": "diegoclave"
+    },
+    {
+        "nombre": "julieta",
+        "correo": "julieta@gmail.com",
+        "clave": "julietaclave"
+    },
+    {
+        "nombre": "romina",
+        "correo": "romina@gmail.com",
+        "clave": "romina"
+    },
+    {
+        "nombre": "ElAdmin",
+        "correo": "admin@admin.com",
+        "clave": "12"
+    }
+]
