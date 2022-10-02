@@ -18,5 +18,15 @@
         "nombre": "ElAdmin",
         "correo": "admin@admin.com",
         "clave": "12"
+    },
+    {
+        "nombre": "Carlos",
+        "correo": "Carlos@carlos.com",
+        "clave": "claveCarlos"
+    },
+    {
+        "nombre": "unusuario",
+        "correo": "unusuario@gmail.com",
+        "clave": "12"
     }
 ]

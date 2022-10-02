@@ -2,6 +2,6 @@
 
 interface IBM
 {
-	function Modificar();	
+    function Modificar();
     static function Eliminar($id);
 }

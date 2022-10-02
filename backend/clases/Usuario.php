@@ -82,6 +82,9 @@ class Usuario implements IBM
     #endregion
 
     #region Metodos Base de Datos
+    // Método de instancia Agregar(): agrega, a partir de la instancia actual, un nuevo registro en la tabla usuarios
+    // (id,nombre, correo, clave e id_perfil), de la base de datos usuarios_test. Retorna true, si se pudo agregar,
+    // false, caso contrario.
     public function Agregar(): bool
     {
         $retorno = false;
@@ -185,10 +188,6 @@ class Usuario implements IBM
         else
             return false;
     }
-
-
-
-
 
 
     #endregion
